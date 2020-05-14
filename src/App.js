@@ -16,9 +16,9 @@ function App() {
       setData(response.data) //setting data to response.data
     })}, [])
   return (
-    <div className="App">
+    <StyledDiv className="App">
       <Potd data={data}/>
-    </div>
+    </StyledDiv>
   );
 }
 
