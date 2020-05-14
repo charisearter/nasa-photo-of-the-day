@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react"; //importing useState
 import "./App.css";
 import axios from 'axios' //importing axios
+import styled from 'styled-components' //adding style components
 import { BASE_URL, API_KEY } from './constants' //import the api url and the api key
+import Potd from './constants/Potd'
+import StyledDiv from './constants/StyledDiv'
 
 function App() {
   const [data, setData] = useState(''); //setting variable data
@@ -14,15 +17,7 @@ function App() {
     })}, [])
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-        <h1>{data.title}</h1>
-        <h2>{data.date}</h2>
-        <img src={data.url} alt= {data.title}/>
-        <p>{data.explanation}</p>
-        {/* <button>{data.hdurl}</button> */}
-      </p>
+      <Potd data={data}/>
     </div>
   );
 }
