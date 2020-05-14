@@ -7,7 +7,6 @@ const StyledTextDiv = styled.div `
     color: #ffffff;
     border-radius: 3px;
     width: 80%;
-    border: 2px groove #FC3D21;
     margin: 0 auto;
 
 `;

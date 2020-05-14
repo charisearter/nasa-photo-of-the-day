@@ -5,7 +5,8 @@ const StyledImg = styled.img `
 width: 80%;
 height: 80%;
 border-radius: 5px;
-border: 2px ridge #FC3D21;
+border: 2px ridge #f4f4f4;
+margin: 2% auto;
 
 `;
 
